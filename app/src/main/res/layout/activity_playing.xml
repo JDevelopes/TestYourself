@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".Playing">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/options"
+        android:layout_margin="8dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/question_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:scrollbars="vertical"
+            android:textColor="@color/colorDarkBlue"
+            android:visibility="invisible" />@
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/colorDarkBlue"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/totalQuestion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center_horizontal"
+                    android:text="1/30"
+                    android:textColor="@color/colorDarkBlue"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnAnswerA"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Answer A"
+                android:textAllCaps="false"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp"
+                android:theme="@style/MyButton"
+                app:cornerRadius="4dp"
+                app:fButtonColor="@color/buttonColor"
+                app:shadowColor="@android:color/black"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnAnswerB"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Answer B"
+                android:textAllCaps="false"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp"
+                android:theme="@style/MyButton"
+                app:cornerRadius="4dp"
+                app:fButtonColor="@color/buttonColor"
+                app:shadowColor="@android:color/black"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnAnswerC"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Answer C"
+                android:textAllCaps="false"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp"
+                android:theme="@style/MyButton"
+                app:cornerRadius="4dp"
+                app:fButtonColor="@color/buttonColor"
+                app:shadowColor="@android:color/black"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnAnswerD"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Answer D"
+                android:textAllCaps="false"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp"
+                android:theme="@style/MyButton"
+                app:cornerRadius="4dp"
+                app:fButtonColor="@color/buttonColor"
+                app:shadowColor="@android:color/black"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

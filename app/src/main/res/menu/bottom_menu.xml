@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/category"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="Kategoriler"
+        android:icon="@drawable/questions" />
+    <item
+        android:title="Sıralama"
+        android:id="@+id/rating"
+        android:enabled="true"
+        android:icon="@drawable/star_blue"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

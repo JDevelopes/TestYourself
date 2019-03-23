@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".Done">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:id="@+id/btnGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/comfortaa_bold"
+                android:textColor="@color/colorblue"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="Skor : 0 "
+                android:id="@+id/textTotalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:fontFamily="@font/comfortaa_bold"
+                android:textColor="@color/colorblue"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="Çözebildin: 0/30 "
+                android:id="@+id/textTotalQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/try_again"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:fButtonColor="@color/buttonColor"
+                android:text="Tekrar Oyna"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="25sp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="4dp"
+                app:shadowColor="@android:color/black"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
